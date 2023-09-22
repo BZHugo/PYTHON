@@ -5,4 +5,4 @@ Hugo Prigent
 """
 import test
 
-print(valid(30/1/2003))
+print(test.valid(30/1/2003))

@@ -24,5 +24,5 @@ def valid(date):                #date format jj/mm/aaaa
     ldate=date
     day=str(ldate[0])+str(ldate[1])
     month=str(ldate[3])+str(ldate[4])
-    return (day != nday(month))
+    return (int(day) != nday(month))
 

@@ -21,8 +21,11 @@ def ndays(x):
         return(31)
 
 def valid(date):                #date format jj/mm/aaaa
-    ldate=date
-    day=str(int(ldate[0]))+str(int(ldate[1]))
-    month=str(int(ldate[3]))+str(int(ldate[4]))
-    return (int(day) != nday(int(month)))
+    date=str(date[0])+str(date[1])
+    month=str(date[3])+str(date[4])
+    if date>30 and ndays(month)==30:
+        return(False)
+    else:
+        return(True)
+    
 

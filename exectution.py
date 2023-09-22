@@ -5,4 +5,4 @@ Hugo Prigent
 """
 import test
 
-print(test.valid("30/01/2003"))
+print(test.valid(30,4,2001))

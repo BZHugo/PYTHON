@@ -26,7 +26,7 @@ def valid(jour,mois,annee): #format d'entre de la date
         if mois==2 and jour>29:
             return False
     if not biss(annee):
-        if jour>28:
+        if mois==2 and jour>28:
             return False
 
 
@@ -37,5 +37,5 @@ def valid(jour,mois,annee): #format d'entre de la date
     if jour>ndays(mois):    #jour d'un mois impossible
         return False 
     
-    
+
 

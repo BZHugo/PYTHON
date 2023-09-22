@@ -1,5 +1,5 @@
 """ 
-tp1-
+tp1-22/09/2023
 hugo prigent
 
 """
@@ -19,4 +19,10 @@ def ndays(x):
         return(30)
     else:
         return(31)
+
+def valid(date):                #date format jj/mm/aaaa
+    ldate=liste(date)
+    day=str(ldate[0])+str(ldate[1])
+    month=stre(ldate[3])+str(ldate[4])
+    return( if day != nday(month) )
 

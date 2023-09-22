@@ -23,6 +23,6 @@ def ndays(x):
 def valid(date):                #date format jj/mm/aaaa
     ldate=date
     day=str(int(ldate[0]))+str(int(ldate[1]))
-    month=str(ldate[3])+str(ldate[4])
+    month=str(int(ldate[3]))+str(int(ldate[4]))
     return (int(day) != nday(int(month)))
 

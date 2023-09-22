@@ -20,9 +20,22 @@ def ndays(x):
     else:
         return(31)
 
-def valid(date):                #date format jj/mm/aaaa
-    date=str(date[0])+str(date[1])
-    month=str(date[3])+str(date[4])
-    print(date,month)
-        
+def valid(jour,mois,annee): #format d'entre de la date
+    
+    if biss(annee):         #cas des annee biss 
+        if mois==2 and jour>29:
+            return False
+    if not biss(annee):
+        if jour>28:
+            return False
+
+
+    if mois>12:             #mois impossible
+        return False
+    if jour>31:             #jour impossible
+        return False
+    if jour>ndays(mois):    #jour d'un mois impossible
+        return False 
+    
+    
 
